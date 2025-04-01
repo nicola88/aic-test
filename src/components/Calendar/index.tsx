@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar, Modal, Form, Input, Button, DatePicker } from 'antd';
+import { Calendar, Modal, Form, Input, Button, DatePicker, Typography } from 'antd';
 import dayjs from 'dayjs';
 
 const EventForm: React.FC<{ visible: boolean, onCancel: () => void, onOk: (values: any) => void, selectedDate: dayjs.Dayjs | null }> = ({
@@ -107,6 +107,7 @@ const CalendarApp: React.FC = () => {
 
   return (
     <div>
+      <Typography.Title level={2}>Calendar</Typography.Title>
       <Calendar onSelect={onSelect} dateCellRender={dateCellRender} />
       <EventForm
         visible={isModalVisible}
