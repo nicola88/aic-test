@@ -107,7 +107,7 @@ const CalendarApp: React.FC = () => {
 
   return (
     <div>
-      <Typography.Title level={2}>Calendar</Typography.Title>
+      <Typography.Title level={2}>My Calendar Application</Typography.Title>
       <Calendar onSelect={onSelect} dateCellRender={dateCellRender} />
       <EventForm
         visible={isModalVisible}
